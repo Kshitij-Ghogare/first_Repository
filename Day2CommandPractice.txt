@@ -1,0 +1,409 @@
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo
+$ git init
+Initialized empty Git repository in D:/infowayOS/demo/.git/
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git init
+Reinitialized existing Git repository in D:/infowayOS/demo/.git/
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git1.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git1.html
+        gitCommand.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git add git1.html gitCommand.txt
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   git1.html
+        new file:   gitCommand.txt
+
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git add *
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git add -A
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   git1.html
+        new file:   gitCommand.txt
+
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git rm --cached
+fatal: No pathspec was given. Which files should I remove?
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git rm --cached git1.html
+rm 'git1.html'
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   gitCommand.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git1.html
+
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git rm --cached *
+fatal: pathspec 'git1.html' did not match any files
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   gitCommand.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git1.html
+
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git add *
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   git1.html
+        new file:   gitCommand.txt
+
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git commit
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Kshitij@LAPTOP-Q3825089.(none)')
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   git1.html
+        new file:   gitCommand.txt
+
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git rm --chached *
+error: unknown option `chached'
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+    --sparse              allow updating entries outside of the sparse-checkout cone
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git rm --cached *
+rm 'git1.html'
+rm 'gitCommand.txt'
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git1.html
+        gitCommand.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git add *
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git commit
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Kshitij@LAPTOP-Q3825089.(none)')
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git commit -m "Update my git page"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Kshitij@LAPTOP-Q3825089.(none)')
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git config --global user.email "Kshitij@gmail.com"
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git config --global user.name "Kshitij Ghogare"
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git commit -m "Update my first git page"
+[master (root-commit) d1ebba0] Update my first git page
+ 2 files changed, 7 insertions(+)
+ create mode 100644 git1.html
+ create mode 100644 gitCommand.txt
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git log
+commit d1ebba0fc20089539261ec1eee549a6bc254ef23 (HEAD -> master)
+Author: Kshitij Ghogare <Kshitij@gmail.com>
+Date:   Tue Jan 4 17:42:07 2022 +0530
+
+    Update my first git page
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git log
+commit d1ebba0fc20089539261ec1eee549a6bc254ef23 (HEAD -> master)
+Author: Kshitij Ghogare <Kshitij@gmail.com>
+Date:   Tue Jan 4 17:42:07 2022 +0530
+
+    Update my first git page
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git diff
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git log
+commit d1ebba0fc20089539261ec1eee549a6bc254ef23 (HEAD -> master)
+Author: Kshitij Ghogare <Kshitij@gmail.com>
+Date:   Tue Jan 4 17:42:07 2022 +0530
+
+    Update my first git page
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git diff
+diff --git a/git1.html b/git1.html
+index 36f5833..e71d20a 100644
+--- a/git1.html
++++ b/git1.html
+@@ -1,5 +1,6 @@
+ <html>
+ <body>
+ This is my first git page
++Hello
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/gitCommand.txt b/gitCommand.txt
+index 265243c..d54e9b0 100644
+--- a/gitCommand.txt
++++ b/gitCommand.txt
+@@ -1,2 +1,4 @@
+ Git --versions
+-Git init
+\ No newline at end of file
++Git init
++
++Git Diff
+\ No newline at end of file
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git show
+commit d1ebba0fc20089539261ec1eee549a6bc254ef23 (HEAD -> master)
+Author: Kshitij Ghogare <Kshitij@gmail.com>
+Date:   Tue Jan 4 17:42:07 2022 +0530
+
+    Update my first git page
+
+diff --git a/git1.html b/git1.html
+new file mode 100644
+index 0000000..36f5833
+--- /dev/null
++++ b/git1.html
+@@ -0,0 +1,5 @@
++<html>
++<body>
++This is my first git page
++</body>
++</html>
+\ No newline at end of file
+diff --git a/gitCommand.txt b/gitCommand.txt
+new file mode 100644
+index 0000000..265243c
+--- /dev/null
++++ b/gitCommand.txt
+@@ -0,0 +1,2 @@
++Git --versions
++Git init
+\ No newline at end of file
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git log
+commit d1ebba0fc20089539261ec1eee549a6bc254ef23 (HEAD -> master)
+Author: Kshitij Ghogare <Kshitij@gmail.com>
+Date:   Tue Jan 4 17:42:07 2022 +0530
+
+    Update my first git page
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git add *
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git commit -m "second change"
+[master a931cc3] second change
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git log
+commit a931cc367f6c719dedc0eb11fc8f275c3bd4f340 (HEAD -> master)
+Author: Kshitij Ghogare <Kshitij@gmail.com>
+Date:   Tue Jan 4 18:37:39 2022 +0530
+
+    second change
+
+commit d1ebba0fc20089539261ec1eee549a6bc254ef23
+Author: Kshitij Ghogare <Kshitij@gmail.com>
+Date:   Tue Jan 4 17:42:07 2022 +0530
+
+    Update my first git page
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git reset^C
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git reset d1ebba0fc20089539261ec1eee549a6bc254ef23
+Unstaged changes after reset:
+M       git1.html
+M       gitCommand.txt
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git log
+commit d1ebba0fc20089539261ec1eee549a6bc254ef23 (HEAD -> master)
+Author: Kshitij Ghogare <Kshitij@gmail.com>
+Date:   Tue Jan 4 17:42:07 2022 +0530
+
+    Update my first git page
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git ls-files
+git1.html
+gitCommand.txt
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git log --pretty=oneline
+d1ebba0fc20089539261ec1eee549a6bc254ef23 (HEAD -> master) Update my first git page
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git log --pretty=short
+commit d1ebba0fc20089539261ec1eee549a6bc254ef23 (HEAD -> master)
+Author: Kshitij Ghogare <Kshitij@gmail.com>
+
+    Update my first git page
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git log --pretty=medium
+commit d1ebba0fc20089539261ec1eee549a6bc254ef23 (HEAD -> master)
+Author: Kshitij Ghogare <Kshitij@gmail.com>
+Date:   Tue Jan 4 17:42:07 2022 +0530
+
+    Update my first git page
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git log --pretty=full
+commit d1ebba0fc20089539261ec1eee549a6bc254ef23 (HEAD -> master)
+Author: Kshitij Ghogare <Kshitij@gmail.com>
+Commit: Kshitij Ghogare <Kshitij@gmail.com>
+
+    Update my first git page
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$ git ls-tree --full-tree --name-only -r HEAD
+git1.html
+gitCommand.txt
+
+Kshitij@LAPTOP-Q3825089 MINGW64 /d/infowayOS/demo (master)
+$
