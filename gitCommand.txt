@@ -2,3 +2,5 @@ Git --versions
 Git init 
 
 Git Diff
+
+git checkout test
